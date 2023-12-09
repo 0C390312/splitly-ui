@@ -1,46 +1,32 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-# dependencies
-/node_modules
-
-# production
-/dist
-
-# misc
+# .gitignore file
 .DS_Store
-.env.local
-.env.*.local
-.env.test
-.env.*.test
-.env.prod
-.env.*.prod
+node_modules
+.nuxt
+dist
+.npmignore
+npm-debug.log
 
-# IDEs and editors
-/.idea
-/.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.idea
+# IDE - VSCode
 .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
-# cache
-.cache
-# end of .gitignore
+# IDE - JetBrains
+.idea
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# npm package lock files
+package-lock.json
+.yarnrc
+.yarn-error.log
+yarn.lock
+
+# Mac
+.DS_Store
+
+# Production
+/*.zip
+/*.tar
+/*.tar.gz
