@@ -4,7 +4,17 @@ import { ref, computed } from "vue";
 const count = ref(0)
 const data = ref([])
 const runtimeConfig = useRuntimeConfig()
-const baseUrl = runtimeConfig.public.SERVER_URL
+const baseUrl = runtimeConfig.public.serverUrl
+onMounted(() => {
+    console.log('base url is: ', baseUrl)
+})
+
+const config = useRuntimeConfig()
+
+console.log('Runtime config:', config)
+if (process.server) {
+    console.log('API secret:', config.apiSecret)
+}
 
 function generate() {
     fetch(`${baseUrl}/generate-people?count=${count.value}`)

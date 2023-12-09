@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui"],
   runtimeConfig: {
     public: {
-      SERVER_URL: process.env.SERVER_URL || "http://localhost:8280"
+      serverUrl: 'http://localhost:8082'
     },
   },
 });

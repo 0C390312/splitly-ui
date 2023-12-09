@@ -48,7 +48,7 @@ pnpm run preview
 Build docker file locally
 
 ```bash
- docker build -t splitly-ui .  
+ docker build -t splitly-ui:latest .  
 ```
 
 run application in docker
