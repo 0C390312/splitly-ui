@@ -1,6 +1,15 @@
 export default defineAppConfig({
   ui: {
-    primary: 'lime',
-    gray: 'neutral',
-  }
-})
+    primary: "orange",
+    gray: "cool",
+    button: {
+      default: {
+
+        variant: "outline"
+      },
+      white: {
+        solid: 'bg-white dark:bg-gray-900'
+      }
+    },
+  },
+});

@@ -1,24 +1,32 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
-
-# Node dependencies
-node_modules
-
-# Logs
-logs
-*.log
-
-# Misc
+# .gitignore file
 .DS_Store
-.fleet
+node_modules
+.nuxt
+dist
+.npmignore
+npm-debug.log
+
+# IDE - VSCode
+.vscode
+
+# IDE - JetBrains
 .idea
 
-# Local env files
+# Environment variables
 .env
 .env.*
 !.env.example
+
+# npm package lock files
+package-lock.json
+.yarnrc
+.yarn-error.log
+yarn.lock
+
+# Mac
+.DS_Store
+
+# Production
+/*.zip
+/*.tar
+/*.tar.gz
